@@ -1,9 +1,11 @@
+```
 project-root/
 |-- public/
 |-- src/
 |   |-- assets/
 |   |   |-- images/
-|   |   |-- styles/
+|   |   |-- fonts/
+|   |   |-- design/
 |   |-- components/
 |   |-- views/
 |   |-- layouts/
@@ -19,3 +21,4 @@ project-root/
 |-- package.json
 |-- README.md
 |-- vue.config.js
+```
