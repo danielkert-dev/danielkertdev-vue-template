@@ -103,6 +103,8 @@ app.mount('#app')
 
 The index.html title and favicon should be changed. 
 
+## Optional
+
 In the src folder create services, layouts, helpers, locales, and stores.
 
 In assets add fonts, images, design. 
