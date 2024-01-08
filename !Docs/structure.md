@@ -1,4 +1,4 @@
-```
+```bash
 project-root/
 |-- public/
 |-- src/
@@ -7,14 +7,15 @@ project-root/
 |   |   |-- fonts/
 |   |   |-- design/
 |   |-- components/
+|   |   |-- global/
+|   |   |-- widgets/
 |   |-- views/
 |   |-- layouts/
 |   |-- services/
-|   |-- store/ (if using Vuex)
-|   |   |-- modules/
+|   |-- store/
 |   |-- router/
-|   |-- plugins/
-|   |-- utils/
+|   |-- locales/
+|   |-- helpers/
 |-- tests/
 |-- .gitignore
 |-- babel.config.js
