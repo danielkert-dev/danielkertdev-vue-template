@@ -1,16 +1,17 @@
 <script setup>
-import { RouterView, RouterLink } from 'vue-router'
+import { RouterView, RouterLink } from 'vue-router';
+import WpAPIComp from './components/WpAPIComp.vue';
+
 </script>
 
 <template>
+    <nav>
+      <RouterLink to="/">Link1</RouterLink>
+    </nav>
 
-  <nav>
-    <RouterLink to="/">Link1</RouterLink>
-  </nav>
+    <RouterView />
+    <WpAPIComp />
 
-  <RouterView />
 </template>
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>
