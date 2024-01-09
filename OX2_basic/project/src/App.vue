@@ -1,6 +1,16 @@
 <script setup>
 import { RouterView, RouterLink } from 'vue-router';
 import WpAPIComp from './components/WpAPIComp.vue';
+import {useSwAPIStore} from './stores/SwAPIStore.js';
+
+import { ref, onMounted } from 'vue';
+const swAPIStore = useSwAPIStore();
+const info = ref([]);
+
+onMounted(async() => {
+  info.value = await swAPIStore.get('info/user');
+  console.log(info.value);
+})
 
 </script>
 
@@ -10,7 +20,7 @@ import WpAPIComp from './components/WpAPIComp.vue';
     </nav>
 
     <RouterView />
-    <WpAPIComp />
+    <WpAPIComp/>
 
 </template>
 

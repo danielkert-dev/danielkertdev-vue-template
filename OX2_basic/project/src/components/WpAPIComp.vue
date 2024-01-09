@@ -12,7 +12,7 @@ const selectedCategory = ref('');
 const selectedAuthor = ref('');
 
 watch (selectedCategory, () => {
-  console.log('Categories updated:', selectedCategory.value);
+  //console.log('Categories updated:', selectedCategory.value);
 });
 
 // Fetch posts and categories on component mount
@@ -24,7 +24,7 @@ onMounted(async () => {
   // console.log('Categories:', categories.value);
 
   authors.value = await wpAPIStore.get('users?per_page=100', {});
-  console.log('Authors:', authors.value);
+  //console.log('Authors:', authors.value);
 
 });
 
